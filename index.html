@@ -11,27 +11,27 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <script type="text/javascript" src="scripts/main.js"></script>
+    
   </head>
-  <body id="top"  onload="timer()">
+  <body id="top"  >
   
     <header>
       <!-- Call back form -->
-<div class="fixed-bottom scrolling-navbar slmall" > 
+<div class="fixed-bottom scrolling-navbar " id="displayNone" > 
    
-
-    <form  class ="" action="https://formspree.io/chupil87@gmail.com" method="POST">
+  
+    <form  class="ajaxForm" action="https://formcarry.com/s/vOGyoqsZchC" method="POST" >
       <div class="row">
           <div class="col-2 center-on-small-only ">
-            <div class="m-3 pl-3">
-              <strong class ="h3 white-text" id="timer">0</strong> 
+            <div class="m-3 pl-3 display-none" id="displayNone2">
+              <strong class ="h3 white-text" id="timer">60</strong> 
               <strong class ="h3 white-text" >ceк</strong>
             </div>
             </div>
         <div class="col">
           <div class="md-form container-fluid ">
             <input class="form-control m-0 h1 white-text" id="tel" type="tel" name="tel" required="required"/>
-            <label class="h3 white-text mt-2 pl-5" for="tel">Предзвонити Вам?</label>
+            <label class="h3 white-text mt-2 pl-5" for="tel">      <p> Предзвонити Вам? Введіть +38 000 000 00 00</p></label>
           </div>
         </div>
       <div class="col-3 center-on-small-only ">
@@ -463,17 +463,17 @@
         <div class="card-body p-5">
           <div class="row">
             <div class="col-md-8">
-              <form action="https://formspree.io/chupil87@gmail.com" method="POST">
+              <form class="ajaxForm" action="https://formcarry.com/s/vOGyoqsZchC" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input class="form-control" id="name" type="text" name="name" required="required"/>
+                      <input class="form-control" id="name" type="text" name="Ім'я" required="required"/>
                       <label for="name">Ваше імя</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input class="form-control" id="email" type="text" name="_replyto" required="required"/>
+                      <input class="form-control" id="email" type="text" name="Email" required="required"/>
                       <label for="email">Ваш email</label>
                     </div>
                   </div>
@@ -481,13 +481,13 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <input class="form-control" id="subject" type="text" name="subject" required="required"/>
-                      <label for="subject">Тема</label>
+                      <input class="form-control" id="subject" type="tel" name="Телефон" required="required"/>
+                      <label for="subject">Телефон</label>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="md-form">
-                      <textarea class="md-textarea" id="message" name="message" required="required"></textarea>
+                      <textarea class="md-textarea" id="message" name="Повідомлення" required="required"></textarea>
                       <label for="message">Повідомлення</label>
                     </div>
                   </div>
@@ -546,7 +546,9 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- <script type="text/javascript" src="scripts/recallform.js"></script> -->
+    <script type="text/javascript" src="scripts/contactform.js"></script>
     <script>new WOW().init();</script>
   </body>
 </html>
