@@ -47,3 +47,19 @@
 #pricing ul li {
   font-size: 1.1em;
 }
+
+.display-none{
+  display: none;
+}
+
+.text-timer-stile{
+color:white;
+font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .slmall {
+    display: none;
+  
+  }
+}

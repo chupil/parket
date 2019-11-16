@@ -11,9 +11,39 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/main.js"></script>
   </head>
-  <body id="top">
+  <body id="top"  onload="timer()">
+  
     <header>
+      <!-- Call back form -->
+<div class="fixed-bottom scrolling-navbar slmall" > 
+   
+
+    <form  class ="" action="https://formspree.io/chupil87@gmail.com" method="POST">
+      <div class="row">
+          <div class="col-2 center-on-small-only ">
+            <div class="m-3 pl-3">
+              <strong class ="h3 white-text" id="timer">0</strong> 
+              <strong class ="h3 white-text" >ceк</strong>
+            </div>
+            </div>
+        <div class="col">
+          <div class="md-form container-fluid ">
+            <input class="form-control m-0 h1 white-text" id="tel" type="tel" name="tel" required="required"/>
+            <label class="h3 white-text mt-2 pl-5" for="tel">Предзвонити Вам?</label>
+          </div>
+        </div>
+      <div class="col-3 center-on-small-only ">
+        <button class="btn btn-indigo btn-sm mt-3" type="submit"><i class="fa fa-phone  mr-2"></i>Передзвонити!</button>
+      </div>
+    </div>
+    </form>
+</div>
+
+       
+
+        
       <!-- Navbar-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
         <div class="container"><a class="navbar-brand" href="#"><strong>Паркет з дуба та ясена</strong></a>
@@ -225,6 +255,54 @@
       </div>
       <div class="col-lg-6 col-xl-5 mb-3"><img class="img-fluid rounded z-depth-2" src="img/san-francisco.jpg" alt="project image"/></div>
     </div>
+  <hr/>
+  <div class="row wow fadeInLeft" data-wow-delay=".3s">
+    <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5">
+      <img class="img-fluid rounded z-depth-2 mb-4" src="img/plintus.jpg" alt="project image"/>
+      <img class="img-fluid rounded z-depth-2" src="img/plintus2.jpg" alt="project image"/>
+    </div>
+    <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+      <h3  class="h4 mt-3 text-center">Плінтуса:</h3>
+      <!-- <div class="row mb-3">
+        <div class="col-1 mr-1"><i class="fa fa-check-circle-o  fa-2x cyan-text"></i></div>
+        <div class="col-10">
+          <h5 class="font-bold">              
+          </h5>
+          <p class="grey-text">
+            Цінується за міцність і гнучкість.
+        </p>
+        </div>
+      </div> -->
+      <div class="row mb-3">
+        <div class="col-1 mr-1"><i class="fa fa-check-circle-o  fa-2x cyan-text"></i></div>
+        <div class="col-10">
+          <h5 class="font-bold">Ясень</h5>
+          <p class="grey-text">
+            Можна виділити наступний перелік очевидних переваг ясеню: екологічно чистий матеріал, невибагливість у догляді, витривалість, вражаючий зовнішній вигляд, універсальність і багатофункціональність, довгий термін служби.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 mr-1"><i class="fa fa-check-circle-o  fa-2x cyan-text"></i></div>
+        <div class="col-10">
+          <h5 class="font-bold">Дубовий плінтус</h5>
+          <p class="grey-text">
+             Ознака розкоші і шику. Такий елемент декору з дуба без сумніву прослужить довгі роки завдяки міцності і добротності. Плінтус з даного сорту дерева прекрасно підкреслить стіни, який би колір не був обраний для їх фарбування, і стане такою собі «вишенькою на торті» в приміщенні, де в ході ремонту перевага була віддана натуральним матеріалам
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+          <!-- <div class="col-1 mr-1"><i class="fa fa-minus-circle fa-2x red-text"></i></div> -->
+          <div class="col-10">
+            <h5 class="font-bold">Особливості</h5>
+            <p class="grey-text">
+              Плінтус з дерева виглядає благородно і стильно, що в поєднанні з натуральною дерев'яною підлогою додасть приміщенню повну гармонію стилю і якості. У поєднанні з особливими фізичними якостями дерева, плінтус з даної деревини є довговічним і екологічно чистим.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
   </div>
 </section>
 
@@ -390,13 +468,13 @@
                   <div class="col-md-6">
                     <div class="md-form">
                       <input class="form-control" id="name" type="text" name="name" required="required"/>
-                      <label for="name">Your name</label>
+                      <label for="name">Ваше імя</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form">
                       <input class="form-control" id="email" type="text" name="_replyto" required="required"/>
-                      <label for="email">Your email</label>
+                      <label for="email">Ваш email</label>
                     </div>
                   </div>
                 </div>
@@ -404,18 +482,18 @@
                   <div class="col-md-12">
                     <div class="md-form">
                       <input class="form-control" id="subject" type="text" name="subject" required="required"/>
-                      <label for="subject">Subject</label>
+                      <label for="subject">Тема</label>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="md-form">
                       <textarea class="md-textarea" id="message" name="message" required="required"></textarea>
-                      <label for="message">Your message</label>
+                      <label for="message">Повідомлення</label>
                     </div>
                   </div>
                 </div>
                 <div class="center-on-small-only mb-4">
-                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Send</button>
+                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Надіслати</button>
                 </div>
               </form>
             </div>
@@ -440,7 +518,12 @@
       </div>
     </div>
   </div>
-</section></div>
+</section>
+</div>
+
+
+
+
     <footer class="page-footer my-color darken-2 center-on-small-only pt-0 mt-0">
       <div class="container">
         <div class="row">
@@ -463,6 +546,7 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    
     <script>new WOW().init();</script>
   </body>
 </html>
