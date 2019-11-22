@@ -24,7 +24,7 @@ function tick()
 }
 
 $(function(){
-    $(".ajaxForm").submit(function(e){
+    $(".ajaxForm1").submit(function(e){
         e.preventDefault();
         var href = $(this).attr("action");
         $.ajax({
@@ -36,6 +36,28 @@ $(function(){
                 if(response.status == "success"){ 
                     timer();                  
                     document.getElementById("displayNone2").classList.remove("display-none");                   
+
+
+                }else{
+                    alert("Сталась помилка " + response.message);
+                }
+            }
+        });
+    });
+});
+
+$(function(){
+    $(".ajaxForm2").submit(function(e){
+        e.preventDefault();
+        var href = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: href,
+            data: $(this).serialize(),
+            success: function(response){
+                if(response.status == "success"){ 
+                    alert("Дані надіслано очікуйте дзвінка");                  
 
 
                 }else{
